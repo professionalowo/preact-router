@@ -15,7 +15,6 @@ export function Router({ routes, notFound }: RouterProps) {
   }, []);
 
   const onNavigate = (event: HashChangeEvent) => {
-    console.log(event);
     setUrl(new URL(event.newURL));
   };
 
